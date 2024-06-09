@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:layout_marginBottom="5dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/account"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/account"
+        />
+    <TextView
+        android:id="@+id/txvTenTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/account"
+        android:text="Ten Tai Khoan"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/txvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bình luận ở đây"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/account"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/txvngayGio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày giờ"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txvComment"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+</RelativeLayout>

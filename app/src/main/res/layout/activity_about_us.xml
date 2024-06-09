@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#433B42"
+    tools:context=".AboutUsActivity">
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="back"
+        android:src="@drawable/left" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="----- Ứng dụng đọc truyện tranh made by group 11 -----"
+        android:textColor="#fff"
+        android:layout_below="@+id/backbtn"
+        android:id="@+id/txvAbouUs"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/txvAbouUs"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/number11"/>
+</RelativeLayout>

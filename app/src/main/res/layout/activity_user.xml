@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#433B42"
+            android:id="@+id/mainLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainLayout"
+            android:id="@+id/userLayout">
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@drawable/user"
+                />
+            <TextView
+                android:id="@+id/txvTentaikhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="tên tài khoản"
+                android:layout_below="@+id/imgUser"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userLayout"
+            android:id="@+id/inforLayout1"
+            android:background="#433B42">
+            <ImageView
+                android:id="@+id/infor1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/info"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Thông tin"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/infor1"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="infor"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inforLayout1"
+            android:background="#433B42"
+            android:id="@+id/inforLayout2">
+
+            <ImageView
+                android:id="@+id/infor2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/padlock" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/infor2"
+                android:text="Đổi mật khẩu"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:onClick="changePass"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inforLayout2"
+            android:background="#433B42"
+            android:id="@+id/inforLayout3">
+
+            <ImageView
+                android:id="@+id/infor3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/chat" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Yêu cầu trợ giúp"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/infor3"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inforLayout3"
+            android:background="#433B42"
+            android:id="@+id/inforLayout4">
+            <ImageView
+                android:id="@+id/infor4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/rate"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đánh giá ứng dụng"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/infor4"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inforLayout4"
+            android:background="#433B42"
+            android:id="@+id/inforLayout5">
+
+            <ImageView
+                android:id="@+id/infor5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/logout" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đăng xuất"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/infor5"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="logout"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/inforLayout4"
+            android:layout_marginTop="350dp"
+            android:background="#433B42">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="35dp"
+                android:padding="15dp"
+                android:onClick="home"
+                android:src="@drawable/home"
+                android:tint="#fff" />
+
+            <ImageView
+                android:id="@+id/follow"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/home"
+                android:onClick="follow"
+                android:padding="15dp"
+                android:src="@drawable/heart"
+                android:tint="#fff" />
+
+            <ImageView
+                android:id="@+id/theloai"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/follow"
+                android:onClick="theLoai"
+                android:padding="15dp"
+                android:src="@drawable/theloai"
+                android:tint="#fff" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/theloai"
+                android:padding="15dp"
+                android:src="@drawable/user"
+                android:tint="#fff" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
